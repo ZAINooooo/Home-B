@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:rsb="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    >
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:id="@+id/Parentoflayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectanglesearch">
+
+                    <AutoCompleteTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/comercialcity"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp"
+                        android:hint="Search in City" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/First"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:text="New Button"
+                    android:visibility="invisible" />
+
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/first1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F3F3F3"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/below">
+
+                        <TextView
+                            android:id="@+id/parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:capitalize="characters"
+                            android:padding="10dp"
+                            android:text="PRICE RANGE"
+                            android:textColor="#686868"
+                            android:textIsSelectable="false" />
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        android:layout_below="@+id/below"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rectanglesearch"
+                            android:orientation="vertical"
+                            android:paddingBottom="5dp">
+
+                            <RelativeLayout
+                                android:id="@+id/layout1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginTop="5dp"
+                                android:background="#FFFFFF"
+                                android:paddingTop="5dp"
+                                >
+
+
+                                <TextView
+                                    android:id="@+id/seekValuemin"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="fill_horizontal"
+                                    android:paddingLeft="30dp"
+                                    android:text="0"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="#B2B2B2" />
+
+                                <TextView
+                                    android:id="@+id/seekValuemax"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:paddingRight="10dp"
+                                    android:text="50+ Crores"
+                                    android:textAppearance="?android:attr/textAppearanceSmall"
+                                    android:textColor="#B2B2B2"
+                                    android:textSize="14sp" />
+
+
+                            </RelativeLayout>
+
+                            <com.example.asad.homebuyerproject.RangeSeekBar
+                                android:id="@+id/rangeSeekBar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginRight="2dp"
+                                android:background="#FFFFFF"
+                                android:layout_weight="1"/>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="start"
+                                android:padding="10dp"
+                                android:text="PROJECT STATUS"
+                                android:textColor="#686868" />
+
+
+                            <TextView
+                                android:id="@+id/propertyid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:padding="10dp"
+                                android:textColor="#686868" />
+
+                        </LinearLayout>
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+
+                            >
+
+                            <HorizontalScrollView
+                                android:id="@+id/scrollView"
+                                android:layout_width="fill_parent"
+                                android:layout_height="100dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_gravity="center"
+                                android:background="#FFFFFF"
+                                android:fillViewport="true"
+                                android:measureAllChildren="false"
+                                android:scrollbars="none"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginTop="1dp"
+                                android:layout_marginBottom="1dp">
+
+                                <LinearLayout
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/rectanglesearch"
+                                    android:orientation="horizontal"
+                                    android:id="@+id/projectcommercial">
+
+
+                                    <CheckBox
+android:layout_marginLeft="1dp"
+                                        android:id="@+id/cBuilder"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:button="@drawable/readydrawable"
+                                        android:checked="false"
+                                        android:tag="ReadyToMove" />
+
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="1"
+                                        android:background="#EEEEEE" />
+
+                                    <CheckBox
+                                        android:id="@+id/cServicedApartment"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="fill_parent"
+                                        android:button="@drawable/underconstructiondrawable"
+                                        android:tag="UnderConstruction" />
+
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="1"
+                                        android:background="#EEEEEE" />
+
+                                    <CheckBox
+                                        android:id="@+id/cLand"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="fill_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:button="@drawable/newlaunchdrawable"
+                                        android:tag="NewProperty" />
+
+
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="fill_parent"
+                                        android:layout_weight="1"
+                                        android:background="#EEEEEE"
+                                        android:layout_marginRight="1dp"/>
+
+
+                                </LinearLayout>
+
+
+                            </HorizontalScrollView>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:background="#F3F3F3"
+                    android:padding="10dp"
+                    android:text="AREA (Sq. ft)"
+                    android:textColor="#686868" />
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rectanglesearch"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dp">
+
+                        <RelativeLayout
+                            android:id="@+id/layout1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="5dp"
+                            android:background="#FFFFFF"
+                            android:paddingTop="5dp"
+                            >
+
+
+                            <TextView
+                                android:id="@+id/seekValuemin1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="fill_horizontal"
+                                android:paddingLeft="30dp"
+                                android:text="0"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="#B2B2B2" />
+
+                            <TextView
+                                android:id="@+id/seekValuemax1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:paddingRight="10dp"
+                                android:text="6000+"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="#B2B2B2"
+                                android:textSize="14sp" />
+
+
+                        </RelativeLayout>
+
+                        <com.example.asad.homebuyerproject.RangeSeekBar
+                            android:id="@+id/rangeSeekBar1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:background="#FFFFFF"
+                            android:layout_weight="1"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <Button
+
+                android:id="@+id/OwnerButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#01579B"
+                android:text="Search"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

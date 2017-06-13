@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/readytomove1"
+        android:id="@+id/mPropertyImages"
+        android:foregroundGravity="right"
+        android:layout_width="100dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mPropertyPrice"
+        android:layout_marginStart="120dp"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:hint="No Data Availabele" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mPropertyAddress"
+        android:layout_marginStart="120dp"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:hint="No Data Availabele"
+        android:layout_marginTop="25dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mPropertyBedroom"
+        android:layout_marginStart="120dp"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:hint="No Data Availabele"
+        android:layout_marginTop="50dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mPropertySize"
+        android:layout_marginStart="120dp"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:hint="No Data Availabele"
+        android:layout_marginTop="75dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mPropertyType"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:hint="No Data Availabele"
+        android:layout_marginTop="100dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mPropertyCategory"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:hint="No Data Availabele"
+        android:layout_marginTop="125dp" />
+
+
+</RelativeLayout>
